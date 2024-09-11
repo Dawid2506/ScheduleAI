@@ -5,6 +5,7 @@
     </div>
     <div class="bg-blue-500 text-white p-4">
         <label>
+            <AiTalk />
             {{ test }}
         </label>
     </div>
