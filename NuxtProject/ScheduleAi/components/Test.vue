@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+        <UserTestAPI />
         <APIconnect />
         <p class="text-sm text-red-600"> tsest </p> <!-- poprawnie: class -->
         <Button class="bg-red-800" label="Check" icon="pi pi-check" />
@@ -28,6 +28,7 @@ dasdsa
 
 <script setup lang="ts">
 import APIconnect from './APIconnect.vue';
+import UserTestAPI from './UserTestAPI.vue';
 
 
 const test = ref<string>('Tessddasdast');
