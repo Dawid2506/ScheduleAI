@@ -25,7 +25,7 @@ public class ApplicationDbContext : DbContext
 
         // Predefiniowane dane dla tabeli WeatherForecast
         modelBuilder.Entity<WeatherForecast>().HasData(
-            new WeatherForecast { Id = 1, Date = new DateOnly(2024, 9, 18), TemperatureC = 20, Summary = "Sunny" },
+            new WeatherForecast { Id = 1, Date = new DateOnly(2024, 9, 18), TemperatureC = 69, Summary = "Sunny" },
             new WeatherForecast { Id = 2, Date = new DateOnly(2024, 9, 19), TemperatureC = 15, Summary = "Cloudy" },
             new WeatherForecast { Id = 3, Date = new DateOnly(2024, 9, 20), TemperatureC = 10, Summary = "Rainy" }
         );
