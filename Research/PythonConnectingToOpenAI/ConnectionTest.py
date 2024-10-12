@@ -4,13 +4,13 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# Endpoint GET, który zwraca zmienną
+
 @app.route('/get-data', methods=['GET'])
 def get_data():
     data = {"message": "To jest wiadomość z Pythona!"}
     return jsonify(data)
 
-# Endpoint POST, który odbiera dane
+
 @app.route('/send-data', methods=['POST'])
 def send_data():
     received_data = request.json
