@@ -19,7 +19,7 @@ const weatherData = ref<any[]>([]);
 
 const fetchWeatherData = async () => {
   try {
-    const response = await axios.get('https://localhost:32771/weatherforecast');
+    const response = await axios.get('https://localhost:5001/WeatherForecast');
     weatherData.value = response.data;
   } catch (error) {
     console.error('Błąd podczas pobierania danych:', error);
