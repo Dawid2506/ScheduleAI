@@ -38,7 +38,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("WebApiDatabase");
+app.UseCors("AllowMyOrigin");
 
 app.UseAuthorization();
 

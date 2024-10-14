@@ -12,7 +12,7 @@ const message = ref('');
 const fetchData = async () => {
     console.log('fetchData');
     try {
-        const response = await axios.get('http://localhost:5000/get-data');
+        const response = await axios.get('http://127.0.0.1:5000/get-ai-response');
         message.value = response.data.message;
     } catch (error) {
         console.log('Błąd podczas pobierania danych:', error);
