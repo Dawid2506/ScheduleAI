@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Test />
+    <mainSiteHeader />
   </div>
 </template>
 
