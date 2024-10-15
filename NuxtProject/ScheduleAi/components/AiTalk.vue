@@ -1,6 +1,6 @@
 <template>
     <div class="bg-red-700">
-        <Button @click="fetchData" />
+        <Button @click="fetchData" class="w-3 h-3"/>
         <p>hello from aiTalk {{ message }}</p>
     </div>
 </template>
@@ -18,10 +18,6 @@ const fetchData = async () => {
         console.log('Błąd podczas pobierania danych:', error);
     }
 };
-
-onMounted(() => {
-    fetchData();
-});
 // make search in file site
 </script>
 
